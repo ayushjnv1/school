@@ -1,0 +1,50 @@
+Isolated I/O
+Isolated I/O uses separate memory space.
+Limited instructions can be used. Those are IN, OUT, INS, OUTS.
+The addresses for Isolated I/O devices are called ports.
+IORC & IOWC signals expands the circuitry.
+Efficient I/O operations due to using separate bus
+Comparatively larger in size
+Uses complex internal logic
+Slower operations
+
+
+Memory Mapped I/O
+Memory mapped I/O uses memory from the main memory.
+Any instruction which references to memory can be used.
+Memory mapped I/O devices are treated as memory locations on the memory map.
+IORC & IOWC signals has no functions in this case which reduces the circuitry.
+Inefficient I/O operations due to using single bus for data and addressing
+Smaller in size
+Common internal logic for memory and I/O devices
+Faster operations
+
+
+Advantages:
+
+Isolated I/O:
+
+• All I/O locations are addressed in exactly the same manner as memory locations. Thus the overall size of the instruction is reduced.
+
+• All arithmetic and logical operators are performed.
+
+• Memory requirement is small .
+
+Memory Mapped I/O:
+
+• Large memory address spaces are available to use.
+
+• Special instructions for I/O operations maximize the performance.
+
+
+Disadvantages
+
+Isolated I/O:
+
+• Part of the memory address space is lost.
+
+Memory Mapped I/O:
+
+• Data has to be transferred to the accumulator to perform arithmetic and logic operations.
+
+
